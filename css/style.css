@@ -36,6 +36,7 @@ div.heading{
     font-size: 3rem;
     line-height: 150px;
     background-color: white;
+    transition: background-color ease-in 0.5s;
 }
 
 .container .block:hover{
