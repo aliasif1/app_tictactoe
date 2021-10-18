@@ -32,6 +32,7 @@ const resetGame = () => {
         document.getElementById(blockId).innerHTML = '';
         document.getElementById(blockId).style.backgroundColor = 'white';
     }
+    isComputerMove = false;
 } 
 
 const makePlayerMove = (block) => {
@@ -71,7 +72,7 @@ const makeMove = (entity, block, char) => {
         return;
     }
     if(win === false && (arr.filter(val => val === '')).length === 0 ){
-        document.getElementById('winner').innerHTML = `$Game Drawn`
+        document.getElementById('winner').innerHTML = `Game Drawn`
         setTimeout(() => {document.getElementById('modal').style.display = "block"}, 200);
         return;
     }
