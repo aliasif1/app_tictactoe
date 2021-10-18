@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h1 id="winner"></h1>
+            <h1>Select your character</h1>
+            <div>
+                <div class="character" onclick="selectCharacter('X')">X</div>
+                <div class="character" onclick="selectCharacter('O')">O</div>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        Tic Tac Toe
+    </div>
+    <div class="outer-container">
+        <div class="container">
+            <div id="block0" class="block" onclick="makePlayerMove(0)"></div>
+            <div id="block1" class="block" onclick="makePlayerMove(1)"></div>
+            <div id="block2" class="block" onclick="makePlayerMove(2)"></div>
+            <div id="block3" class="block" onclick="makePlayerMove(3)"></div>
+            <div id="block4" class="block" onclick="makePlayerMove(4)"></div>
+            <div id="block5" class="block" onclick="makePlayerMove(5)"></div>
+            <div id="block6" class="block" onclick="makePlayerMove(6)"></div>
+            <div id="block7" class="block" onclick="makePlayerMove(7)"></div>
+            <div id="block8" class="block" onclick="makePlayerMove(8)"></div>
+        </div> 
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
