@@ -66,7 +66,12 @@ const makeMove = (entity, block, char) => {
     if(win !== false){
         console.log(`${entity} wins`);
         win.forEach(id => document.getElementById(`block${id}`).style.backgroundColor = 'green');
-        document.getElementById('winner').innerHTML = `${entity} wins`
+        document.getElementById('winner').innerHTML = `${entity} Wins`
+        setTimeout(() => {document.getElementById('modal').style.display = "block"}, 200);
+        return;
+    }
+    if(win === false && (arr.filter(val => val === '')).length === 0 ){
+        document.getElementById('winner').innerHTML = `$Game Drawn`
         setTimeout(() => {document.getElementById('modal').style.display = "block"}, 200);
         return;
     }
